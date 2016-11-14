@@ -29,7 +29,7 @@ class App extends Component {
       }
     }
 
-    csv('/threats.csv', row, (e, d) => {
+    csv('threats.csv', row, (e, d) => {
       if (e) throw e;
       this.setState({ data: d });
     });
